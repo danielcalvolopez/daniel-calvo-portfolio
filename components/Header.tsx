@@ -24,21 +24,25 @@ const Header = (props: Props) => {
         className="flex flex-row items-center"
       >
         <SocialIcon
+          className="socialicon"
           url="https://twitter.com/danicalvomusic"
           fgColor="#8892b0"
           bgColor="transparent"
         />
         <SocialIcon
+          className="socialicon"
           url="https://github.com/danielcalvolopez"
           fgColor="#8892b0"
           bgColor="transparent"
         />
         <SocialIcon
+          className="socialicon"
           url="https://www.linkedin.com/in/daniel-calvo-lopez-97607187/"
           fgColor="#8892b0"
           bgColor="transparent"
         />
         <SocialIcon
+          className="socialicon"
           url="https://www.instagram.com/danicalvomusic/"
           fgColor="#8892b0"
           bgColor="transparent"

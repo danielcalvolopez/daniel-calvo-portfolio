@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Pannel from "../components/Pannel";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[#0a192f] text-[#ccd6f6] h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className="bg-[#0a192f] text-[#ccd6f6] h-screen snap-y snap-mandatory overflow-scroll z-0 font-my-font">
       <Head>
         <title>Daniel Calvo Portfolio</title>
       </Head>
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       {/* Hero*/}
       <section id="hero" className="snap-center">
-        <Hero />
+        <Pannel />
       </section>
 
       {/* About*/}

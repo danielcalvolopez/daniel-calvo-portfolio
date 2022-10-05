@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .pannelBtn {
+    @apply mx-6 py-2  uppercase text-xs tracking-widest transition-all;
+  }
+  .socialicon:hover {
+    @apply animate-spin;
+  }
+  .link-underline {
+    color: #8892b0;
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#8892b0, #8892b0);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
+  }
+
+  .link-underline-black {
+    color: #8892b0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#64ffda, #64ffda);
+  }
+
+  .link-underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%;
+  }
+}
