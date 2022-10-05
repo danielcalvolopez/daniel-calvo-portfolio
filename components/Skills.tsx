@@ -35,6 +35,7 @@ const Skills = (props: Props) => {
         <Skill />
         <Skill />
         <Skill />
+        <Skill />
       </div>
     </motion.div>
   );
