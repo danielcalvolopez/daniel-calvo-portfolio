@@ -1,4 +1,3 @@
-import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
@@ -26,25 +25,25 @@ const Header = (props: Props) => {
         <SocialIcon
           className="socialicon"
           url="https://twitter.com/danicalvomusic"
-          fgColor="#8892b0"
+          fgColor="#8892B1"
           bgColor="transparent"
         />
         <SocialIcon
           className="socialicon"
           url="https://github.com/danielcalvolopez"
-          fgColor="#8892b0"
+          fgColor="#8892B1"
           bgColor="transparent"
         />
         <SocialIcon
           className="socialicon"
           url="https://www.linkedin.com/in/daniel-calvo-lopez-97607187/"
-          fgColor="#8892b0"
+          fgColor="#8892B1"
           bgColor="transparent"
         />
         <SocialIcon
           className="socialicon"
           url="https://www.instagram.com/danicalvomusic/"
-          fgColor="#8892b0"
+          fgColor="#8892B1"
           bgColor="transparent"
         />
       </motion.div>
@@ -62,15 +61,15 @@ const Header = (props: Props) => {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center text-gray-300 cursor-pointer"
+        className="flex flex-row items-center text-[#8892b0]-300 cursor-pointer"
       >
         <SocialIcon
           className="cursor-pointer"
           network="email"
-          fgColor="#8892b0"
+          fgColor="#8892B1"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+        <p className="uppercase hidden md:inline-flex text-sm text-[#8892B1]">
           Get in touch
         </p>
       </motion.div>

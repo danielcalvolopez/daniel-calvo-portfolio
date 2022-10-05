@@ -29,7 +29,7 @@ const Pannel = (props: Props) => {
           alt="dani"
         />
       </picture>
-      <div className="z-40">
+      <div className="z-20">
         <motion.h2
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -53,7 +53,7 @@ const Pannel = (props: Props) => {
           Front End Developer
         </motion.h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
-          <span className="mr-3">{text}</span>
+          <span className="mr-3 text-[#ccd6f6]">{text}</span>
           <Cursor cursorColor="#64ffda" />
         </h1>
         <div className="pt-5">
@@ -62,11 +62,11 @@ const Pannel = (props: Props) => {
               About
             </button>
           </Link>
-          <Link href="#experience">
+          {/* <Link href="#experience">
             <button className="pannelBtn text-[#8892b0]-500 link link-underline link-underline-black">
               Experience
             </button>
-          </Link>
+          </Link> */}
           <Link href="#skills">
             <button className="pannelBtn border-[#8892b0] text-[#8892b0]-500 link link-underline link-underline-black">
               Skills
