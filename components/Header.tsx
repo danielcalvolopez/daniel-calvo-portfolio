@@ -25,36 +25,51 @@ const Header = (props: Props) => {
       >
         <SocialIcon
           url="https://twitter.com/danicalvomusic"
-          fgColor="gray"
+          fgColor="#8892b0"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://github.com/danielcalvolopez"
-          fgColor="gray"
+          fgColor="#8892b0"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://www.linkedin.com/in/daniel-calvo-lopez-97607187/"
-          fgColor="gray"
+          fgColor="#8892b0"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://www.instagram.com/danicalvomusic/"
-          fgColor="gray"
+          fgColor="#8892b0"
           bgColor="transparent"
         />
       </motion.div>
-      <div className="flex flex-row items-center text-gray-300 cursor-pointer">
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="flex flex-row items-center text-gray-300 cursor-pointer"
+      >
         <SocialIcon
           className="cursor-pointer"
           network="email"
-          fgColor="gray"
+          fgColor="#8892b0"
           bgColor="transparent"
         />
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
           Get in touch
         </p>
-      </div>
+      </motion.div>
     </header>
   );
 };

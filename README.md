@@ -17,3 +17,4 @@ TypeScript
 TailwindCSS (Styles)
 React Social Icons
 Framer Motion (Animations)
+React Simple Typewritter (Typewritter effect)
