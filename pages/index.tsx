@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
 import Experience from "../components/Experience";
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
         <title>Daniel Calvo Portfolio</title>
       </Head>
       <Header />
-      <section id="hero" className="snap-start">
+      <section id="home" className="snap-start">
         <Pannel />
       </section>
       <section id="about" className="snap-center">
@@ -33,6 +34,19 @@ const Home: NextPage = () => {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+      <Link href="#home">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex item-center justify-center">
+            <picture>
+              <img
+                className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+                src="https://i.postimg.cc/Rh0WD7nW/DC.png"
+                alt="logo"
+              />
+            </picture>
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 };
