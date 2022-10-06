@@ -10,7 +10,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This is my personal portfolio that I am currently developing and implementing features.
+This is my personal portfolio that I am currently developing and implementing features. Here are some of the technologies used for this project.
 
 NextJS
 TypeScript

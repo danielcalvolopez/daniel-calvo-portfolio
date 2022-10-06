@@ -6,6 +6,13 @@
   .pannelBtn {
     @apply mx-6 py-2  uppercase text-xs tracking-widest transition-all;
   }
+  .technologies {
+    @apply flex gap-3 justify-center items-center;
+  }
+
+  .projectsBtn {
+    @apply border border-[#64ffda] w-20 h-10 hover:bg-[#64ffda3d] rounded;
+  }
   .socialicon:hover {
     @apply animate-spin;
   }

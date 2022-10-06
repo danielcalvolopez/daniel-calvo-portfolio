@@ -72,7 +72,7 @@ const Pannel = (props: Props) => {
               Skills
             </button>
           </Link>
-          <Link href="projects">
+          <Link href="#projects">
             <button className="pannelBtn border-[#8892b0] text-[#8892b0]-500 link link-underline link-underline-black ">
               Projects
             </button>
