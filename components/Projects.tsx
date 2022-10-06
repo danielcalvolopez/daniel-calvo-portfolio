@@ -24,7 +24,7 @@ const Projects = (props: Props) => {
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
         {projects.map((project, i) => (
           <div
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
@@ -84,7 +84,7 @@ const Projects = (props: Props) => {
                   <Link href="">
                     <button className="projectsBtn">Demo</button>
                   </Link>
-                  <Link href="">
+                  <Link href="https://github.com/danielcalvolopez/daniel-calvo-portfolio">
                     <button className="projectsBtn">Repo</button>
                   </Link>
                 </div>
