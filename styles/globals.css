@@ -14,7 +14,7 @@
     @apply border border-[#64ffda] w-20 h-10 hover:bg-[#64ffda3d] text-[#64ffda] rounded;
   }
   .socialicon:hover {
-    @apply animate-spin;
+    @apply animate-spin fill-[#64FFF7];
   }
 
   .contactInput {

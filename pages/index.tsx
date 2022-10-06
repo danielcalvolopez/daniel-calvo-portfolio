@@ -14,6 +14,7 @@ const Home: NextPage = () => {
     <div className="bg-[#0a192f] h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 font-my-font scrollbar scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
       <Head>
         <title>Daniel Calvo Portfolio</title>
+        <link rel="icon" href="/dclogo.png" />
       </Head>
       <Header />
       <section id="home" className="snap-start">

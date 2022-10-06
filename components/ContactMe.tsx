@@ -57,7 +57,9 @@ const ContactMe = (props: Props) => {
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <IoLocationSharp className="text-[#64ffda] animate-pulse h-5 w-5" />
-            <p className="text-xl text-[#a8b2d1]">408 Java House, E14 0LG</p>
+            <p className="text-xl text-[#a8b2d1]">
+              408 Java House, London E14 0LG
+            </p>
           </div>
         </div>
 

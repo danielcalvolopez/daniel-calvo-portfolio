@@ -10,8 +10,8 @@ const Skill = ({ directionLeft }: Props) => {
   return (
     <>
       {skillInfo.map((skills) => (
-        <>
-          <div key={skills.name} className="group relative flex cursor-pointer">
+        <div key={skills.name}>
+          <div className="group relative flex cursor-pointer">
             <motion.img
               initial={{
                 x: directionLeft ? -200 : 200,
@@ -33,7 +33,7 @@ const Skill = ({ directionLeft }: Props) => {
               </div>
             </div>
           </div>
-        </>
+        </div>
       ))}
     </>
   );
