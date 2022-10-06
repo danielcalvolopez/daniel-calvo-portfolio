@@ -52,7 +52,7 @@ const About = (props: Props) => {
           Sound Engineering at the university, one of the modules was music
           software programming, and since then I have not stopped learning
           something new, every day. I am also a{" "}
-          <span className="greenText"> (really bad)</span> surfer and a wannabe
+          <span className="greenText"> (pretty bad)</span> surfer and a wannabe
           gamer.
         </p>
       </div>

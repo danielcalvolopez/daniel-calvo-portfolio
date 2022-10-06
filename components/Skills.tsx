@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Skill from "./Skill";
+import { TbCoffee } from "react-icons/tb";
 
 type Props = {};
 
@@ -21,20 +22,12 @@ const Skills = (props: Props) => {
         Skills
       </h3>
 
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-[#a8b2d1] text-sm">
-        Hover over a skill for current proficiency
+      <h3 className="flex gap-3 items-center absolute top-36 uppercase tracking-[3px] text-[#a8b2d1] text-sm">
+        Hover over a skill for current proficiency ( measured in{" "}
+        <TbCoffee size={20} color={"#64FFF7"} />)
       </h3>
 
       <div className="grid grid-cols-4 gap-5 ">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
         <Skill />
       </div>
     </motion.div>
