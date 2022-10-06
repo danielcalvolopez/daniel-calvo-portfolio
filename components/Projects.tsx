@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { BiRightArrow } from "react-icons/bi";
 
 type Props = {};
 
 const Projects = (props: Props) => {
   const projects = [1, 2, 3];
-
-  console.log(projects);
 
   return (
     <motion.div
@@ -25,7 +24,7 @@ const Projects = (props: Props) => {
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
         {projects.map((project, i) => (
           <div
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
@@ -49,7 +48,7 @@ const Projects = (props: Props) => {
               className="mt-20"
             />
 
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+            <div className="space-y-10 px-0 md:px-10 max-w-6xl ">
               <h4 className="text-[#a8b2d1] text-4xl font-semibold text-center">
                 <span className="underline decoration-[#64ffda]/50">
                   Project {i + 1}/{projects.length}:
@@ -81,9 +80,13 @@ const Projects = (props: Props) => {
                   </p>
                 </div>
 
-                <div className="text-[#64ffda] px-0 md:px-10 flex flex-col items-center justify-center gap-10">
-                  <button className="projectsBtn">Demo</button>
-                  <button className="projectsBtn">Repo</button>
+                <div className="px-0 md:px-10 flex flex-col items-center justify-center gap-10">
+                  <Link href="">
+                    <button className="projectsBtn">Demo</button>
+                  </Link>
+                  <Link href="">
+                    <button className="projectsBtn">Repo</button>
+                  </Link>
                 </div>
               </div>
             </div>

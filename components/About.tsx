@@ -45,12 +45,15 @@ const About = (props: Props) => {
           background
         </h4>
         <p className="text-[#a8b2d1] text-lg text-base">
-          I have two passions, Music and Technology, and I have been using
+          I have two passions, Music and{" "}
+          <span className="greenText">Technology</span>, and I have been using
           technology as a tool to make music my entire life. Still, the moment
           that really defined what my path would be was when I was studying
           Sound Engineering at the university, one of the modules was music
           software programming, and since then I have not stopped learning
-          something new, every day.
+          something new, every day. I am also a{" "}
+          <span className="greenText"> (really bad)</span> surfer and a wannabe
+          gamer.
         </p>
       </div>
     </motion.div>

@@ -58,23 +58,23 @@ const Pannel = (props: Props) => {
         </h1>
         <div className="pt-5">
           <Link href="#about">
-            <button className="pannelBtn text-[#8892b0]-500 link link-underline link-underline-black">
-              About
+            <button className="pannelBtn link link-underline link-underline-black">
+              <span className="text-[#64ffda]">1. </span>About
             </button>
           </Link>
-          {/* <Link href="#experience">
-            <button className="pannelBtn text-[#8892b0]-500 link link-underline link-underline-black">
-              Experience
+          <Link href="#experience">
+            <button className="pannelBtn link link-underline link-underline-black">
+              <span className="text-[#64ffda]">2. </span>Experience
             </button>
-          </Link> */}
+          </Link>
           <Link href="#skills">
-            <button className="pannelBtn border-[#8892b0] text-[#8892b0]-500 link link-underline link-underline-black">
-              Skills
+            <button className="pannelBtn link link-underline link-underline-black">
+              <span className="text-[#64ffda]">3. </span>Skills
             </button>
           </Link>
           <Link href="#projects">
-            <button className="pannelBtn border-[#8892b0] text-[#8892b0]-500 link link-underline link-underline-black ">
-              Projects
+            <button className="pannelBtn link link-underline link-underline-black ">
+              <span className="text-[#64ffda]">4. </span>Projects
             </button>
           </Link>
         </div>

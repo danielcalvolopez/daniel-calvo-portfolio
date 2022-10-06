@@ -4,18 +4,27 @@
 
 @layer components {
   .pannelBtn {
-    @apply mx-6 py-2  uppercase text-xs tracking-widest transition-all;
+    @apply mx-6 py-2  uppercase text-xs tracking-widest transition-all text-[#8892b0];
   }
   .technologies {
     @apply flex gap-3 justify-center items-center;
   }
 
   .projectsBtn {
-    @apply border border-[#64ffda] w-20 h-10 hover:bg-[#64ffda3d] rounded;
+    @apply border border-[#64ffda] w-20 h-10 hover:bg-[#64ffda3d] text-[#64ffda] rounded;
   }
   .socialicon:hover {
     @apply animate-spin;
   }
+
+  .contactInput {
+    @apply outline-none bg-[#a8b2d1]/30 rounded-sm border-b border-[#8892b0] px-6 py-4 text-[#e6f1ff] placeholder-[#8892b0] transition-all focus:border-[#64ffda]/80 focus:text-[#64ffda]/80 hover:border-[#64ffda]/80;
+  }
+
+  .greenText {
+    @apply text-[#64ffda];
+  }
+
   .link-underline {
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent),
