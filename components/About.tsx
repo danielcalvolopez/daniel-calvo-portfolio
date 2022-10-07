@@ -14,7 +14,7 @@ const About = (props: Props) => {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col relative h-screen text-center md:text-left md:flex-row sm:mt-0 max-w-7xl px-10 justify-evenly mx-auto items-center "
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-[#e6f1ff] text-2xl">
         About
@@ -34,15 +34,15 @@ const About = (props: Props) => {
         viewport={{ once: true }}
         src="https://i.ibb.co/ZVvRDqT/Untitled-design-8.png"
         alt="danicolor"
-        className="shadow-xl -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-95 md:h-95 xl:w-[500px] xl:h-[500px]"
+        className="shadow-xl -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-95 md:h-95 xl:w-[500px] xl:h-[500px] "
       />
-      <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold text-[#ccd6f6]">
-          Here is a{" "}
+      <div className="space-y-0 md:space-y-5 px-0 md:px-10 ">
+        <h4 className="text-4xl hidden md:flex font-semibold text-[#ccd6f6]">
+          Here is a&nbsp;
           <span className="underline underline-offset-2 decoration-[#64ffda]/80">
             little
-          </span>{" "}
-          background
+          </span>
+          &nbsp;background
         </h4>
         <p className="text-[#a8b2d1] text-lg text-base">
           I have two passions, Music and{" "}
@@ -51,7 +51,7 @@ const About = (props: Props) => {
           that really defined what my path would be was when I was studying
           Sound Engineering at the university, one of the modules was music
           software programming, and since then I have not stopped learning
-          something new, every day. I'm also a{" "}
+          something new, every day. I´m also a{" "}
           <span className="greenText"> (pretty bad)</span> surfer and a wannabe
           gamer.
         </p>

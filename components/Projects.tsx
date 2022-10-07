@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BiRightArrow } from "react-icons/bi";
+import projects from "./../utils/projects";
 
 type Props = {};
 
 const Projects = (props: Props) => {
-  const projects = [1, 2, 3];
-
   return (
     <motion.div
       initial={{
@@ -24,11 +21,11 @@ const Projects = (props: Props) => {
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80 mt-5">
         {projects.map((project, i) => (
           <div
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
-            key={Math.random()}
+            key={project.alt}
           >
             <motion.img
               initial={{
@@ -43,9 +40,9 @@ const Projects = (props: Props) => {
                 duration: 1.2,
               }}
               viewport={{ once: true }}
-              src="https://i.ibb.co/RTLwWfh/Untitled-design-12.png"
-              alt="portfoliomockup"
-              className="mt-20"
+              src={project.img}
+              alt={project.alt}
+              className="mt-20 sm:max-w-xl "
             />
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl ">
@@ -53,40 +50,25 @@ const Projects = (props: Props) => {
                 <span className="underline decoration-[#64ffda]/50">
                   Project {i + 1}/{projects.length}:
                 </span>{" "}
-                My portfolio
+                {project.name}
               </h4>
               <div className=" grid lg:grid-cols-2 sm:grid-rows-2 gap-5">
                 <div className="text-[#a8b2d1] space-y-2 px-0  flex flex-col items-start ">
-                  <p className="technologies">
-                    <BiRightArrow color="#64ffda" />
-                    NextJS
-                  </p>
-                  <p className="technologies">
-                    <BiRightArrow color="#64ffda" />
-                    TypeScript
-                  </p>
-                  <p className="technologies">
-                    <BiRightArrow color="#64ffda" /> TailwindCSS
-                  </p>
-                  <p className="technologies">
-                    <BiRightArrow color="#64ffda" /> React Social Icons
-                  </p>
-                  <p className="technologies">
-                    <BiRightArrow color="#64ffda" />
-                    Framer Motion{" "}
-                  </p>
-                  <p className="technologies">
-                    <BiRightArrow color="#64ffda" /> React Simple Typewritter
-                  </p>
+                  <p className="technologies">{project.technology1}</p>
+                  <p className="technologies">{project.technology2}</p>
+                  <p className="technologies">{project.technology3}</p>
+                  <p className="technologies">{project.technology4}</p>
+                  <p className="technologies">{project.technology5}</p>
+                  <p className="technologies">{project.technology6}</p>
                 </div>
 
                 <div className="px-0 md:px-10 flex flex-col items-center justify-center gap-10">
-                  <Link href="">
+                  <a href={project.demoURL}>
                     <button className="projectsBtn">Demo</button>
-                  </Link>
-                  <Link href="https://github.com/danielcalvolopez/daniel-calvo-portfolio">
+                  </a>
+                  <a href={project.repoURL}>
                     <button className="projectsBtn">Repo</button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

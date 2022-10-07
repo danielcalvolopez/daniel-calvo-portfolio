@@ -5,6 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { TiSocialTwitter, TiSocialLinkedin } from "react-icons/ti";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io";
 
 type Props = {};
 
@@ -32,48 +33,19 @@ const Header = (props: Props) => {
             <TiSocialTwitter
               className="socialicon greenOnHover"
               color="#8892B1"
-              size="35"
+              size="33"
             />
           </a>
           <a href="https://github.com/danielcalvolopez">
-            <AiFillGithub className="socialicon" color="#8892B1" size="28" />
+            <AiFillGithub className="socialicon" color="#8892B1" size="25" />
           </a>
           <a href="https://www.linkedin.com/in/daniel-calvo-lopez-97607187">
-            <TiSocialLinkedin
-              className="socialicon"
-              color="#8892B1"
-              size="40"
-            />
+            <IoLogoLinkedin className="socialicon" color="#8892B1" size="26" />
           </a>
-          <a href="https://www.instagram.com/danicalvomusic">
-            <RiInstagramLine className="socialicon" color="#8892B1" size="29" />
+          <a href="https://www.instagram.com/danicalvomusic/">
+            <RiInstagramLine className="socialicon" color="#8892B1" size="24" />
           </a>
         </div>
-
-        {/* <SocialIcon
-          className="socialicon"
-          url="https://twitter.com/danicalvomusic"
-          fgColor="#8892B1"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          className="socialicon"
-          url="https://github.com/danielcalvolopez"
-          fgColor="#8892B1"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          className="socialicon"
-          url="https://www.linkedin.com/in/daniel-calvo-lopez-97607187/"
-          fgColor="#8892B1"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          className="socialicon"
-          url="https://www.instagram.com/danicalvomusic/"
-          fgColor="#8892B1"
-          bgColor="transparent"
-        /> */}
       </motion.div>
 
       <Link href="#contact">

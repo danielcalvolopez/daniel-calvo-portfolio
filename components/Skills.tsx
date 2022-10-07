@@ -22,12 +22,12 @@ const Skills = (props: Props) => {
         Skills
       </h3>
 
-      <h3 className="flex gap-2 items-center absolute top-36 uppercase tracking-[3px] text-[#a8b2d1] text-sm ">
+      <h3 className="hidden md:flex gap-2 items-center absolute top-36 uppercase tracking-[3px] text-[#a8b2d1] text-sm ">
         Hover over a skill for current proficiency ( measured in{" "}
         <TbCoffee size={15} color={"#64FFF7"} className="" />)
       </h3>
 
-      <div className="grid grid-cols-4 gap-5 ">
+      <div className="grid grid-cols-3 gap-5 sm:grid-cols-4">
         <Skill />
       </div>
     </motion.div>
