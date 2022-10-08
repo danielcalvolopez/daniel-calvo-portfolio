@@ -9,7 +9,7 @@ const Pannel = (props: Props) => {
   const [text, count] = useTypewriter({
     words: [
       "Hi, I am Daniel Calvo",
-      `This-portfolio-required-5-coffees-to-be-built.tsx`,
+      `This-portfolio-required-7-coffees-to-be-built.tsx`,
       "<WithoutCaffeine />",
     ],
     loop: true,

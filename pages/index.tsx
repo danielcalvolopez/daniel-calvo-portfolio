@@ -35,9 +35,9 @@ const Home: NextPage = () => {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
-      <Link href="#home">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex item-center justify-center">
+      <footer className="sticky bottom-5 w-full flex item-center justify-center ">
+        <div className="flex item-center justify-center w-24">
+          <Link href="#home">
             <picture>
               <img
                 className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
@@ -45,9 +45,9 @@ const Home: NextPage = () => {
                 alt="logo"
               />
             </picture>
-          </div>
-        </footer>
-      </Link>
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 };

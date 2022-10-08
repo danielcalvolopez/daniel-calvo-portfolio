@@ -13,6 +13,8 @@ const ContactMe = () => {
   const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
 
+  console.log(form);
+
   const sendEmail = (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -28,12 +30,12 @@ const ContactMe = () => {
           setAlertMessage("Your message was succesfully sent!");
           setOpenModal(true);
           setIsLoading(false);
+          e.target.reset();
         },
         (error) => {
           setAlertMessage(
             "Your message couldn't be sent! Please, use a different contact method."
           );
-
           setOpenModal(true);
         }
       );
