@@ -8,12 +8,10 @@ import Modal from "./UI/Modal";
 import LoadingSpinner from "./UI/LoadingSpinner";
 
 const ContactMe = () => {
-  const [alertMessage, setAlertMessage] = useState("");
+  const [success, setSuccess] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
-
-  console.log(form);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,22 +19,22 @@ const ContactMe = () => {
     emailjs
       .sendForm(
         "service_psxjbum",
-        "template_pbt6hnr",
+        "template_pbt6hnr3",
         form.current,
         "z6YcqDik5ar1p9a8x"
       )
       .then(
         (result) => {
-          setAlertMessage("Your message was succesfully sent!");
+          setSuccess(true);
           setOpenModal(true);
           setIsLoading(false);
           e.target.reset();
         },
         (error) => {
-          setAlertMessage(
-            "Your message couldn't be sent! Please, use a different contact method."
-          );
+          setSuccess(false);
           setOpenModal(true);
+          setIsLoading(false);
+          e.target.reset();
         }
       );
   };
@@ -122,7 +120,7 @@ const ContactMe = () => {
         </form>
       </div>
       {openModal && (
-        <Modal alertMessage={alertMessage} toggleModal={setOpenModal} />
+        <Modal successMessage={success} toggleModal={setOpenModal} />
       )}
     </div>
   );
