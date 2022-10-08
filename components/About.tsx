@@ -16,7 +16,7 @@ const About = (props: Props) => {
       }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row sm:mt-0 max-w-7xl px-10 justify-evenly mx-auto items-center "
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-[#e6f1ff] text-2xl">
+      <h3 className="absolute top-24 uppercase indent-5 tracking-[20px] text-[#e6f1ff] text-2xl">
         About
       </h3>
       <motion.img

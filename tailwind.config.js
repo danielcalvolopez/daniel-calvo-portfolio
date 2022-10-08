@@ -25,6 +25,9 @@ module.exports = {
         },
       },
     },
+    top: {
+      "15v": "15vh",
+    },
   },
   plugins: [require("tailwind-scrollbar")],
 };

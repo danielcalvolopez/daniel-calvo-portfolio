@@ -2,25 +2,45 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Modal from "./UI/Modal";
+import LoadingSpinner from "./UI/LoadingSpinner";
 
-type Inputs = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+const ContactMe = () => {
+  const [alertMessage, setAlertMessage] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const form = useRef();
 
-type Props = {};
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    emailjs
+      .sendForm(
+        "service_psxjbum",
+        "template_pbt6hnr",
+        form.current,
+        "z6YcqDik5ar1p9a8x"
+      )
+      .then(
+        (result) => {
+          setAlertMessage("Your message was succesfully sent!");
+          setOpenModal(true);
+          setIsLoading(false);
+        },
+        (error) => {
+          setAlertMessage(
+            "Your message couldn't be sent! Please, use a different contact method."
+          );
 
-const ContactMe = (props: Props) => {
-  const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:acidistrict@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+          setOpenModal(true);
+        }
+      );
   };
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-[#e6f1ff] text-2xl">
+      <h3 className="flex absolute top-24 uppercase indent-5 tracking-[20px] text-[#e6f1ff] text-2xl">
         Contact
       </h3>
       <div className="flex flex-col space-y-10 text-[#e6f1ff]">
@@ -57,49 +77,51 @@ const ContactMe = (props: Props) => {
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <IoLocationSharp className="text-[#64ffda] animate-pulse h-5 w-5" />
-            <p className="text-xl text-[#a8b2d1]">
-              408 Java House, London E14 0LG
-            </p>
+            <p className="text-xl text-[#a8b2d1]">London</p>
           </div>
         </div>
 
         <form
-          onSubmit={handleSubmit(onSubmit)}
+          ref={form}
+          onSubmit={sendEmail}
           className="flex flex-col space-y-2 w-fit mx-auto"
         >
           <div className="flex space-x-2">
             <input
-              {...register("name")}
               placeholder="Name"
               className="contactInput "
               type="text"
+              name="user_name"
             />
             <input
-              {...register("email")}
               placeholder="Email"
               className="contactInput"
               type="email"
+              name="user_email"
             />
           </div>
           <input
-            {...register("subject")}
             placeholder="Subject"
             className="contactInput"
             type="text"
+            name="subject"
           />
           <textarea
-            {...register("message")}
             placeholder="Message"
             className="contactInput"
+            name="message"
           />
           <button
             type="submit"
-            className="border border-[#64ffda] py-5 px-10 hover:bg-[#64ffda3d] text-[#64ffda] rounded"
+            className="border border-[#64ffda] py-5 px-10 hover:bg-[#64ffda3d] text-[#64ffda] rounded flex justify-center items-center"
           >
-            Submit
+            {isLoading ? <LoadingSpinner /> : <p>Submit</p>}
           </button>
         </form>
       </div>
+      {openModal && (
+        <Modal alertMessage={alertMessage} toggleModal={setOpenModal} />
+      )}
     </div>
   );
 };
