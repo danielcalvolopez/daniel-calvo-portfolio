@@ -19,7 +19,7 @@ const ContactMe = () => {
     emailjs
       .sendForm(
         "service_psxjbum",
-        "template_pbt6hnr3",
+        "template_pbt6hnr",
         form.current,
         "z6YcqDik5ar1p9a8x"
       )
