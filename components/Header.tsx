@@ -1,8 +1,7 @@
-import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
-import { TiSocialTwitter, TiSocialLinkedin } from "react-icons/ti";
+import { TiSocialTwitter } from "react-icons/ti";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";

@@ -8,27 +8,22 @@ const paths = [
   {
     id: "index",
     Element: Index,
-    className: "snap-start",
   },
   {
     id: "about",
     Element: About,
-    className: "snap-center",
   },
   {
     id: "projects",
     Element: Projects,
-    className: "snap-start",
   },
   {
     id: "skills",
     Element: Skills,
-    className: "snap-start",
   },
   {
     id: "contact",
     Element: ContactMe,
-    className: "snap-start",
   },
 ];
 

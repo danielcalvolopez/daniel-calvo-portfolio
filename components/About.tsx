@@ -36,21 +36,17 @@ const About = () => {
       />
       <div className="space-y-0 md:space-y-5 px-0 md:px-10 ">
         <h4 className="text-4xl hidden md:flex font-semibold text-[#ccd6f6]">
-          Here is a&nbsp;
-          <span className="underline underline-offset-2 decoration-[#64ffda]/80">
-            little
-          </span>
-          &nbsp;background
+          Here is a little background
         </h4>
         <p className="text-[#a8b2d1] text-lg text-base">
           I have two passions, Music and{" "}
-          <span className="greenText">Technology</span>, and I have been using
+          <span className="green-text">Technology</span>, and I have been using
           technology as a tool to make music my entire life. Still, the moment
           that really defined what my path would be was when I was studying
           Sound Engineering at the university, one of the modules was music
           software programming, and since then I have not stopped learning
           something new, every day. I´m also a{" "}
-          <span className="greenText"> (pretty bad)</span> surfer and a wannabe
+          <span className="green-text"> (pretty bad)</span> surfer and a wannabe
           gamer.
         </p>
       </div>

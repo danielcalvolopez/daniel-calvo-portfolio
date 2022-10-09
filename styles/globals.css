@@ -11,8 +11,13 @@
   }
 
   .projects-btn {
-    @apply border border-[#64ffda] w-20 h-10 hover:bg-[#64ffda3d] text-[#64ffda] rounded;
+    @apply border  border-[#64ffda] w-20 h-10 hover:bg-[#64ffda3d] text-[#64ffda] rounded;
   }
+
+  .links-btn {
+    @apply w-10 h-10 hover:bg-[#64ffda3d] text-[#64ffda] rounded-full;
+  }
+
   .socialicon:hover {
     @apply transition-all fill-[#64FFF7];
   }
@@ -55,4 +60,19 @@
 .get-in-touch-container:hover .get-in-touch-text {
   color: #64fff7;
   transition: width 2s, height 4s;
+}
+
+@layer utilities {
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+  .snap-mandatory {
+    --scroll-snap-constraint: mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
 }

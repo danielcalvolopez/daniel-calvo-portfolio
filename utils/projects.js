@@ -5,14 +5,14 @@ const projects = [
     alt: "portfolio",
     demoURL: "#home",
     repoURL: "https://github.com/danielcalvolopez/daniel-calvo-portfolio",
-    technologies: [
-      "NextJS",
-      "TypeScript",
-      "TailwindCSS",
+    technologies1: ["NextJS", "TypeScript", "TailwindCSS"],
+    technologies2: [
       "React Social Icons",
       "Framer Motion",
       "React Simple Typewritter",
     ],
+    description:
+      "My personal portfolio, featuring some of my projects, skills and personality!",
   },
   {
     name: "Real Time Chat App",
@@ -20,14 +20,10 @@ const projects = [
     alt: "chat",
     demoURL: "",
     repoURL: "https://github.com/danielcalvolopez/chat-app",
-    technologies: [
-      "NextJS",
-      "React Router",
-      "Firebase Authentication",
-      "Enviroment Variables",
-      "CSS Modules",
-      "Firestore",
-    ],
+    technologies1: ["NextJS", "React Router", "Firebase Auth"],
+    technologies2: ["Enviroment Variables", "CSS Modules", "Firestore"],
+    description:
+      "This chat app allows you to register and talk in real time with any other user within the database, just tell your friend to set up an account, search his name and enjoy!",
   },
   {
     name: "Food Delivery App",
@@ -35,14 +31,9 @@ const projects = [
     alt: "foodapp",
     demoURL: "",
     repoURL: "https://github.com/danielcalvolopez/food-delivery-app",
-    technologies: [
-      "NextJS",
-      "JavaScript",
-      "CSS Modules",
-      "Firebase",
-      "useContext",
-      "useReducer",
-    ],
+    technologies1: ["NextJS", "JavaScript", "CSS Modules"],
+    technologies2: ["Firebase", "useContext", "useReducer"],
+    description: "A minimal, fast and efficient app to order food!",
   },
 ];
 

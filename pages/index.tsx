@@ -6,14 +6,14 @@ import paths from "./../utils/paths";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[#0a192f] pr-2 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 font-my-font scrollbar-thin scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
+    <div className="bg-[#0a192f] pr-2 h-screen snap snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 font-my-font scrollbar-thin scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
       <Head>
         <title>Daniel Calvo Lopez</title>
         <link rel="icon" href="/dani-green.png" />
       </Head>
       <Header />
-      {paths.map(({ id, Element, className }) => (
-        <section key={id} id={id} className={className}>
+      {paths.map(({ id, Element }) => (
+        <section key={id} id={id} className="snap-start">
           {<Element />}
         </section>
       ))}
