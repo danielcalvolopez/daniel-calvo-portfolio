@@ -2,11 +2,10 @@ import Link from "next/link";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import { motion } from "framer-motion";
+import indexLinks from "./../utils/indexLinks";
 
-type Props = {};
-
-const Pannel = (props: Props) => {
-  const [text, count] = useTypewriter({
+const Index = () => {
+  const [text] = useTypewriter({
     words: [
       "Hi, I am Daniel Calvo",
       `This-portfolio-required-7-coffees-to-be-built.tsx`,
@@ -57,30 +56,17 @@ const Pannel = (props: Props) => {
           <Cursor cursorColor="#64ffda" />
         </h1>
         <div className="pt-5">
-          <Link href="#about">
-            <button className="pannelBtn link link-underline link-underline-black">
-              <span className="text-[#64ffda]">1. </span>About
-            </button>
-          </Link>
-          <Link href="#experience">
-            <button className="pannelBtn link link-underline link-underline-black">
-              <span className="text-[#64ffda]">2. </span>Experience
-            </button>
-          </Link>
-          <Link href="#skills">
-            <button className="pannelBtn link link-underline link-underline-black">
-              <span className="text-[#64ffda]">3. </span>Skills
-            </button>
-          </Link>
-          <Link href="#projects">
-            <button className="pannelBtn link link-underline link-underline-black ">
-              <span className="text-[#64ffda]">4. </span>Projects
-            </button>
-          </Link>
+          {indexLinks.map(({ name, path }, i) => (
+            <Link key={name} href={path}>
+              <button className="pannel-btn link link-underline link-underline-black">
+                <span className="text-[#64ffda]">{i + 1}</span>. {name}
+              </button>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Pannel;
+export default Index;

@@ -7,9 +7,7 @@ import { RiInstagramLine } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <header className="sticky top-0 p-5 flex justify-between max-w-7xl mx-auto z-10 xl:items-center">
       <motion.div
@@ -30,11 +28,7 @@ const Header = (props: Props) => {
       >
         <div className="flex flex-row items-center gap-3 cursor-pointer">
           <a href="https://twitter.com/danicalvomusic">
-            <TiSocialTwitter
-              className="socialicon greenOnHover"
-              color="#8892B1"
-              size="33"
-            />
+            <TiSocialTwitter className="socialicon" color="#8892B1" size="33" />
           </a>
           <a href="https://github.com/danielcalvolopez">
             <AiFillGithub className="socialicon" color="#8892B1" size="25" />
@@ -63,15 +57,15 @@ const Header = (props: Props) => {
           transition={{
             duration: 1.5,
           }}
-          className="flex flex-row items-center text-[#8892b0]-300 cursor-pointer"
+          className="get-in-touch-container flex flex-row items-center text-[#8892b0]-300 cursor-pointer"
         >
           <div className="flex items-center gap-2">
             <FaEnvelope
               size="17"
               color="#8892B1"
-              className="hover:fill-[#64FFF7]"
+              className="get-in-touch-icon"
             />
-            <p className="uppercase hidden md:inline-flex text-sm text-[#8892B1]  hover:text-[#64FFF7]">
+            <p className="get-in-touch-text uppercase hidden md:inline-flex text-sm text-[#8892B1]">
               Get in touch
             </p>
           </div>

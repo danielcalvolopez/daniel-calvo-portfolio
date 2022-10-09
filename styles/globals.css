@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 @layer components {
-  .pannelBtn {
+  .pannel-btn {
     @apply mx-6 py-2  uppercase text-xs tracking-widest transition-all text-[#8892b0];
   }
   .technologies {
     @apply flex gap-3 justify-center items-center;
   }
 
-  .projectsBtn {
+  .projects-btn {
     @apply border border-[#64ffda] w-20 h-10 hover:bg-[#64ffda3d] text-[#64ffda] rounded;
   }
   .socialicon:hover {
-    @apply animate-spin fill-[#64FFF7];
+    @apply transition-all fill-[#64FFF7];
   }
 
-  .contactInput {
-    @apply outline-none bg-[#a8b2d1]/30 rounded-sm border-b border-[#8892b0] px-6 py-4 text-[#e6f1ff] placeholder-[#8892b0] transition-all focus:border-[#64ffda]/80 focus:text-[#64ffda]/80 hover:border-[#64ffda]/80;
+  .contact-input {
+    @apply outline-none bg-[#a8b2d1]/30 rounded-sm border-b border-[#8892b0] px-6 py-4 text-[#e6f1ff] placeholder-[#8892b0] transition-all focus:border-[#64ffda]/80 focus:text-[#64ffda]/80 hover:border-[#64ffda]/80 p-3 md:text-xl w-full;
   }
 
-  .greenText {
+  .green-text {
     @apply text-[#64ffda];
   }
 
@@ -42,8 +42,17 @@
   }
 
   .link-underline:hover {
-    background-size: 100% 2px;
+    background-size: 100% 3px;
     background-position: 0 100%;
     color: #ccd6f6;
   }
+}
+
+.get-in-touch-container:hover .get-in-touch-icon {
+  fill: #64fff7;
+  transition: width 2s, height 4s;
+}
+.get-in-touch-container:hover .get-in-touch-text {
+  color: #64fff7;
+  transition: width 2s, height 4s;
 }

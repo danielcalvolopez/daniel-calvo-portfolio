@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 
-type Props = {};
-
-const Experience = (props: Props) => {
+const Experience = () => {
   return (
     <motion.div
       initial={{

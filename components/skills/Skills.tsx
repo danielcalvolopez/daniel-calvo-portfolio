@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Skill from "./Skill";
-import { TbCoffee } from "react-icons/tb";
+import { TbCoffee as CoffeeIcon } from "react-icons/tb";
+import skills from "../../utils/skills";
 
 type Props = {};
 
@@ -24,11 +25,20 @@ const Skills = (props: Props) => {
 
       <h3 className="hidden md:flex gap-2 items-center absolute top-36 uppercase tracking-[3px] text-[#a8b2d1] text-sm ">
         Hover over a skill for current proficiency ( measured in{" "}
-        <TbCoffee size={15} color={"#64FFF7"} className="" />)
+        <CoffeeIcon size={15} color={"#64FFF7"} className="" />)
       </h3>
 
       <div className="grid grid-cols-3 gap-5 sm:grid-cols-4">
-        <Skill />
+        {skills.map(({ name, imgSrc, alt, percentage }) => (
+          <Skill
+            key={name}
+            imgSrc={imgSrc}
+            alt={alt}
+            percentage={percentage}
+            directionLeft={false}
+            name={name}
+          />
+        ))}
       </div>
     </motion.div>
   );

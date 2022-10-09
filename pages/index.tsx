@@ -1,52 +1,33 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
-import About from "../components/About";
-import ContactMe from "../components/ContactMe";
-import Experience from "../components/Experience";
 import Header from "../components/Header";
-import Pannel from "../components/Pannel";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
+import { IoIosArrowUp } from "react-icons/io";
+import paths from "./../utils/paths";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[#0a192f] h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 font-my-font scrollbar scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
+    <div className="bg-[#0a192f] pr-2 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 font-my-font scrollbar-thin scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80">
       <Head>
-        <title>Daniel Calvo Portfolio</title>
-        <link rel="icon" href="/dclogo.png" />
+        <title>Daniel Calvo Lopez</title>
+        <link rel="icon" href="/dani-green.png" />
       </Head>
       <Header />
-      <section id="home" className="snap-start">
-        <Pannel />
-      </section>
-      <section id="about" className="snap-center">
-        <About />
-      </section>
-      <section id="experience" className="snap-start">
-        <Experience />
-      </section>
-      <section id="skills" className="snap-start">
-        <Skills />
-      </section>
-      <section id="projects" className="snap-start">
-        <Projects />
-      </section>
-      <section id="contact" className="snap-start">
-        <ContactMe />
-      </section>
-      <footer className="sticky bottom-5 w-full flex item-center justify-center ">
-        <div className="flex item-center justify-center w-24">
-          <Link href="#home">
-            <picture>
-              <img
-                className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-                src="https://i.postimg.cc/Rh0WD7nW/DC.png"
-                alt="logo"
-              />
-            </picture>
-          </Link>
-        </div>
+      {paths.map(({ id, Element, className }) => (
+        <section key={id} id={id} className={className}>
+          {<Element />}
+        </section>
+      ))}
+
+      <footer className="sticky bottom-5 w-full flex justify-end">
+        <section className="flex item-center justify-center w-24">
+          <a href="#index">
+            <IoIosArrowUp
+              size={40}
+              color="#8892B1"
+              className="cursor-pointer hover:fill-[#64fff7]"
+            />
+          </a>
+        </section>
       </footer>
     </div>
   );

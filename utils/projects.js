@@ -1,5 +1,3 @@
-import { BiRightArrow } from "react-icons/bi";
-
 const projects = [
   {
     name: "My portfolio",
@@ -7,36 +5,14 @@ const projects = [
     alt: "portfolio",
     demoURL: "#home",
     repoURL: "https://github.com/danielcalvolopez/daniel-calvo-portfolio",
-    technology1: (
-      <>
-        <BiRightArrow color="#64ffda" /> NextJS
-      </>
-    ),
-    technology2: (
-      <>
-        <BiRightArrow color="#64ffda" /> TypeScript
-      </>
-    ),
-    technology3: (
-      <>
-        <BiRightArrow color="#64ffda" /> TailwindCSS
-      </>
-    ),
-    technology4: (
-      <>
-        <BiRightArrow color="#64ffda" /> React Social Icons
-      </>
-    ),
-    technology5: (
-      <>
-        <BiRightArrow color="#64ffda" /> Framer Motion
-      </>
-    ),
-    technology6: (
-      <>
-        <BiRightArrow color="#64ffda" /> React Simple Typewritter
-      </>
-    ),
+    technologies: [
+      "NextJS",
+      "TypeScript",
+      "TailwindCSS",
+      "React Social Icons",
+      "Framer Motion",
+      "React Simple Typewritter",
+    ],
   },
   {
     name: "Real Time Chat App",
@@ -44,36 +20,14 @@ const projects = [
     alt: "chat",
     demoURL: "",
     repoURL: "https://github.com/danielcalvolopez/chat-app",
-    technology1: (
-      <>
-        <BiRightArrow color="#64ffda" /> ReactJS
-      </>
-    ),
-    technology2: (
-      <>
-        <BiRightArrow color="#64ffda" /> React Router
-      </>
-    ),
-    technology3: (
-      <>
-        <BiRightArrow color="#64ffda" /> Firebase Authentication
-      </>
-    ),
-    technology4: (
-      <>
-        <BiRightArrow color="#64ffda" /> Enviroment Variables
-      </>
-    ),
-    technology5: (
-      <>
-        <BiRightArrow color="#64ffda" /> CSS Modules
-      </>
-    ),
-    technology6: (
-      <>
-        <BiRightArrow color="#64ffda" /> Firestore
-      </>
-    ),
+    technologies: [
+      "NextJS",
+      "React Router",
+      "Firebase Authentication",
+      "Enviroment Variables",
+      "CSS Modules",
+      "Firestore",
+    ],
   },
   {
     name: "Food Delivery App",
@@ -81,36 +35,14 @@ const projects = [
     alt: "foodapp",
     demoURL: "",
     repoURL: "https://github.com/danielcalvolopez/food-delivery-app",
-    technology1: (
-      <>
-        <BiRightArrow color="#64ffda" /> ReactJS
-      </>
-    ),
-    technology2: (
-      <>
-        <BiRightArrow color="#64ffda" /> JavaScript
-      </>
-    ),
-    technology3: (
-      <>
-        <BiRightArrow color="#64ffda" /> CSS Modules
-      </>
-    ),
-    technology4: (
-      <>
-        <BiRightArrow color="#64ffda" /> Firebase
-      </>
-    ),
-    technology5: (
-      <>
-        <BiRightArrow color="#64ffda" /> useContext
-      </>
-    ),
-    technology6: (
-      <>
-        <BiRightArrow color="#64ffda" /> useReducer
-      </>
-    ),
+    technologies: [
+      "NextJS",
+      "JavaScript",
+      "CSS Modules",
+      "Firebase",
+      "useContext",
+      "useReducer",
+    ],
   },
 ];
 
