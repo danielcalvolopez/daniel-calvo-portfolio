@@ -15,7 +15,7 @@ const projects = [
       "My personal portfolio, featuring some of my projects, skills and personality!",
   },
   {
-    name: "Real Time Chat App",
+    name: "Chat App",
     img: "https://i.postimg.cc/DZXD32xr/3.png",
     alt: "chat",
     demoURL: "",
@@ -26,7 +26,7 @@ const projects = [
       "This chat app allows you to register and talk in real time with any other user within the database, just tell your friend to set up an account, search his name and enjoy!",
   },
   {
-    name: "Food Delivery App",
+    name: "Food App",
     img: "https://i.postimg.cc/MGxJDf5C/2.png",
     alt: "foodapp",
     demoURL: "",

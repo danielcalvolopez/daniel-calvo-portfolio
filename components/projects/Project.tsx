@@ -48,28 +48,27 @@ const Project = ({
         className="sm:max-w-xl "
       />
 
-      <div className="space-y-10 px-0 md:px-2 max-w-6xl ">
-        <h4 className="text-[#a8b2d1] text-4xl font-semibold text-center ">
-          {name}
-        </h4>
+      <div className="flex flex-col  px-0 md:px-2 max-w-6xl ">
+        <div className="flex flex-row justify-center ">
+          <h4 className="text-[#a8b2d1] text-4xl font-semibold text-center mr-4">
+            {name}
+          </h4>
+          <div className="flex flex-row items-center justify-center ">
+            <a href={demoURL}>
+              <button className="links-btn flex flex-row items-center justify-center gap-1">
+                <IoOpenOutline size="25" />
+              </button>
+            </a>
+            <a href={repoURL}>
+              <button className="links-btn flex flex-row items-center justify-center">
+                <GitHubLogo size="25" />
+              </button>
+            </a>
+          </div>
+        </div>
         <div className="flex flex-row gap-5">
-          <div className="text-[#a8b2d1] space-y-2 px-0 flex flex-col items-center ">
-            <div className="flex flex-row items-center justify-center gap-10 ">
-              <a href={demoURL}>
-                <button className="links-btn flex flex-row items-center justify-center gap-1">
-                  <IoOpenOutline size="25" />
-                </button>
-              </a>
-              <a href={repoURL}>
-                <button className="links-btn flex flex-row items-center justify-center">
-                  <GitHubLogo size="25" />
-                </button>
-              </a>
-            </div>
-
-            <div className="bg-[#020c1b] p-4 rounded shadow-lg md:w-96	border border-[#64ffdb5c]">
-              {description}
-            </div>
+          <div className="text-[#a8b2d1] space-y-3 px-0 flex flex-col items-center ">
+            <div className="font-thin p-4  md:w-96">{description}</div>
 
             <div className="flex flex-col mt-10 md:flex-row md:gap-10">
               <div className="flex flex-col items-start">
