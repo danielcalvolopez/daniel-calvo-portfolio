@@ -1,12 +1,23 @@
 import { motion } from "framer-motion";
-import projects from "./../../utils/projects";
+import projects from "../../utils/projects";
 import Project from "./Project";
 import {
   BsChevronRight as ArrowRight,
   BsChevronLeft as ArrowLeft,
 } from "react-icons/bs";
+import React, { useState } from "react";
 
 const Projects = () => {
+  const [current, setCurrent] = useState(0);
+  const length = projects.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
   return (
     <motion.div
       initial={{
@@ -24,36 +35,51 @@ const Projects = () => {
         Projects
       </h3>
 
-      <ArrowLeft className="arrow left-3 lg:left-48 cursor-pointer hover:fill-[#64ffda]" />
+      <ArrowLeft
+        onClick={prevSlide}
+        className="arrow left-3 lg:left-48 cursor-pointer hover:fill-[#64ffda]"
+      />
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80 mt-5">
+      <div className="relative w-full flex overflow-y-hidden snap-x snap-mandatory z-20 mt-5">
         {projects.map(
-          ({
-            alt,
-            img,
-            name,
-            technologies1,
-            technologies2,
-            demoURL,
-            repoURL,
-            description,
-          }) => (
-            <Project
-              key={alt}
-              name={name}
-              technologies1={technologies1}
-              technologies2={technologies2}
-              img={img}
-              alt={alt}
-              demoURL={demoURL}
-              repoURL={repoURL}
-              description={description}
-            />
-          )
+          (
+            {
+              alt,
+              img,
+              name,
+              technologies1,
+              technologies2,
+              demoURL,
+              repoURL,
+              description,
+            },
+            index
+          ) => {
+            return (
+              <div key={index}>
+                {index === current && (
+                  <Project
+                    key={alt}
+                    name={name}
+                    technologies1={technologies1}
+                    technologies2={technologies2}
+                    img={img}
+                    alt={alt}
+                    demoURL={demoURL}
+                    repoURL={repoURL}
+                    description={description}
+                  />
+                )}
+              </div>
+            );
+          }
         )}
       </div>
 
-      <ArrowRight className="arrow right-3 lg:right-48 cursor-pointer hover:fill-[#64ffda]" />
+      <ArrowRight
+        onClick={nextSlide}
+        className="arrow right-3 lg:right-48 cursor-pointer hover:fill-[#64ffda]"
+      />
 
       <div className="w-full absolute top-[30%] bg-[#57cbff]/10 left-0 h-[500px] -skew-y-12 z-0" />
     </motion.div>
