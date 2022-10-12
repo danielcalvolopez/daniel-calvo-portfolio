@@ -51,6 +51,22 @@
     background-position: 0 100%;
     color: #ccd6f6;
   }
+
+  .arrow {
+    top: calc(50% - 20px);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    fill: #e6f1ff;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .arrow {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
 
 .get-in-touch-container:hover .get-in-touch-icon {

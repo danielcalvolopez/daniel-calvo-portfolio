@@ -8,7 +8,7 @@ const Index = () => {
   const [text] = useTypewriter({
     words: [
       "Hi, I am Daniel Calvo",
-      `This-portfolio-required-7-coffees-to-be-built.tsx`,
+      `a-guy-who-loves-coffee.scss`,
       "<WithoutCaffeine />",
     ],
     loop: true,
