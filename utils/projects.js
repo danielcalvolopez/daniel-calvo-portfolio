@@ -1,7 +1,7 @@
 const projects = [
   {
     name: "My portfolio",
-    img: "https://i.postimg.cc/mr02BgyV/1.png",
+    img: "https://i.ibb.co/9yqZjTT/1.png",
     alt: "portfolio",
     demoURL: "#home",
     repoURL: "https://github.com/danielcalvolopez/daniel-calvo-portfolio",
@@ -12,10 +12,10 @@ const projects = [
   },
   {
     name: "Chat App",
-    img: "https://i.postimg.cc/DZXD32xr/3.png",
+    img: "https://i.ibb.co/09ZXDqp/3.png",
     alt: "chat",
     demoURL: "",
-    repoURL: "https://github.com/danielcalvolopez/chat-app",
+    repoURL: "https://i.ibb.co/H7QDf85/3.png",
     technologies1: ["NextJS", "React Router", "Firebase Auth"],
     technologies2: ["Env Variables", "CSS Modules", "Firestore"],
     description:
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     name: "Food App",
-    img: "https://i.postimg.cc/MGxJDf5C/2.png",
+    img: "https://i.ibb.co/hX6h2CL/2.png",
     alt: "foodapp",
     demoURL: "",
     repoURL: "https://github.com/danielcalvolopez/food-delivery-app",

@@ -8,15 +8,15 @@ import {
 import React, { useState } from "react";
 
 const Projects = () => {
-  const [current, setCurrent] = useState(0);
+  const [currentSlide, setCurrent] = useState(0);
   const length = projects.length;
 
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    setCurrent(currentSlide === length - 1 ? 0 : currentSlide + 1);
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    setCurrent(currentSlide === 0 ? length - 1 : currentSlide - 1);
   };
   return (
     <motion.div
@@ -29,7 +29,7 @@ const Projects = () => {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="h-screen relative flex overflow-x-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
       <h3 className="absolute top-24 uppercase indent-5 tracking-[20px] text-[#e6f1ff] text-2xl">
         Projects
@@ -40,7 +40,7 @@ const Projects = () => {
         className="arrow left-3 lg:left-48 cursor-pointer hover:fill-[#64ffda]"
       />
 
-      <div className="relative w-full flex overflow-y-hidden snap-x snap-mandatory z-20 mt-5">
+      <div className="relative w-full flex overflow-y-hidden overflow-x-hidden snap-x snap-mandatory z-20 mt-5">
         {projects.map(
           (
             {
@@ -57,7 +57,7 @@ const Projects = () => {
           ) => {
             return (
               <div key={index}>
-                {index === current && (
+                {index === currentSlide && (
                   <Project
                     key={alt}
                     name={name}

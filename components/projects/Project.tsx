@@ -27,7 +27,7 @@ const Project = ({
 }: Props) => {
   return (
     <div
-      className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
+      className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center p-20 md:p-44 h-screen"
       key={alt}
     >
       <motion.img
@@ -48,7 +48,7 @@ const Project = ({
         className="sm:max-w-xl "
       />
 
-      <div className="flex flex-col  px-0 md:px-2 max-w-6xl ">
+      <div className="flex flex-col px-0 md:px-2 max-w-6xl ">
         <div className="flex flex-row justify-center ">
           <h4 className="text-[#a8b2d1] text-4xl font-semibold text-center mr-4">
             {name}
