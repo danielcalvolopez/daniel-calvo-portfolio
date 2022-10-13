@@ -32,7 +32,7 @@ const About = () => {
         viewport={{ once: true }}
         src="https://i.ibb.co/ZVvRDqT/Untitled-design-8.png"
         alt="danicolor"
-        className="shadow-xl -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-95 md:h-95 xl:w-[500px] xl:h-[500px] "
+        className="mt-3.5 shadow-xl -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-95 md:h-95 xl:w-[500px] xl:h-[500px] "
       />
       <div className="space-y-0 md:space-y-5 px-0 md:px-10 ">
         <h4 className="text-4xl hidden md:flex font-semibold text-[#ccd6f6]">

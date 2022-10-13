@@ -43,7 +43,7 @@ const ContactMe = () => {
         <h3 className="flex absolute top-24 uppercase indent-5 tracking-[20px] text-[#e6f1ff] text-2xl">
           Contact
         </h3>
-        <div className="pt-24 flex flex-col space-y-8 text-[#e6f1ff] ">
+        <div className="pt-36 flex flex-col space-y-8 text-[#e6f1ff] ">
           <motion.h4
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
