@@ -73,7 +73,7 @@ const Project = ({
         </div>
         <div className="flex flex-row gap-5 justify-center">
           <div className="text-[#a8b2d1] space-y-3 px-0 flex flex-col items-center justify-center ">
-            <div className="font-thin p-4 md:w-96">{description}</div>
+            <div className="hidden font-thin p-4 md:w-96">{description}</div>
 
             <div className="flex flex-col mt-10 md:flex-row md:gap-10">
               <div className="flex flex-col items-start">
