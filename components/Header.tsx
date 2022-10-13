@@ -26,18 +26,38 @@ const Header = () => {
         className="flex flex-row items-center"
       >
         <div className="flex flex-row items-center gap-3 cursor-pointer">
-          <a href="https://twitter.com/danicalvomusic">
-            <TiSocialTwitter className="socialicon" color="#8892B1" size="33" />
-          </a>
-          <a href="https://github.com/danielcalvolopez">
-            <AiFillGithub className="socialicon" color="#8892B1" size="25" />
-          </a>
-          <a href="https://www.linkedin.com/in/daniel-calvo-lopez-97607187">
-            <IoLogoLinkedin className="socialicon" color="#8892B1" size="26" />
-          </a>
-          <a href="https://www.instagram.com/danicalvomusic/">
-            <RiInstagramLine className="socialicon" color="#8892B1" size="24" />
-          </a>
+          <Link href="https://twitter.com/danicalvomusic">
+            <a target="_blank">
+              <TiSocialTwitter
+                className="socialicon"
+                color="#8892B1"
+                size="33"
+              />
+            </a>
+          </Link>
+          <Link href="https://github.com/danielcalvolopez">
+            <a target="_blank">
+              <AiFillGithub className="socialicon" color="#8892B1" size="25" />
+            </a>
+          </Link>
+          <Link href="https://www.linkedin.com/in/daniel-calvo-lopez-97607187">
+            <a target="_blank">
+              <IoLogoLinkedin
+                className="socialicon"
+                color="#8892B1"
+                size="26"
+              />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/danicalvomusic/">
+            <a target="_blank">
+              <RiInstagramLine
+                className="socialicon"
+                color="#8892B1"
+                size="24"
+              />
+            </a>
+          </Link>
         </div>
       </motion.div>
 

@@ -20,7 +20,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/ContactMe.jsx"
+    "components/ContactMe.jsx",
+    "components/projects/Projects.jsx",
+    "components/projects/Projects.jsx",
+    "components/projects/Projects.jsx"
   ],
   "exclude": ["node_modules"]
 }

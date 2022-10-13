@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { BiRightArrow } from "react-icons/bi";
 import { IoOpenOutline } from "react-icons/io5";
 import { AiFillGithub as GitHubLogo } from "react-icons/ai";
+import Link from "next/link";
 
 type Props = {
   name: string;
@@ -54,16 +55,20 @@ const Project = ({
             {name}
           </h4>
           <div className="flex flex-row items-center justify-center ">
-            <a href={demoURL}>
-              <button className="links-btn flex flex-row items-center justify-center gap-1">
-                <IoOpenOutline size="25" />
-              </button>
-            </a>
-            <a href={repoURL}>
-              <button className="links-btn flex flex-row items-center justify-center">
-                <GitHubLogo size="25" />
-              </button>
-            </a>
+            <Link href={demoURL}>
+              <a target="_blank">
+                <button className="links-btn flex flex-row items-center justify-center gap-1">
+                  <IoOpenOutline size="25" />
+                </button>
+              </a>
+            </Link>
+            <Link href={repoURL}>
+              <a target="_blank">
+                <button className="links-btn flex flex-row items-center justify-center">
+                  <GitHubLogo size="25" />
+                </button>
+              </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-row gap-5">
