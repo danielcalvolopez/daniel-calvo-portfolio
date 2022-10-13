@@ -28,7 +28,7 @@ const Project = ({
 }: Props) => {
   return (
     <div
-      className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center p-20 md:p-44 h-screen"
+      className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center p-20 md:p-44 h-screen overflow-hidden"
       key={alt}
     >
       <motion.img
