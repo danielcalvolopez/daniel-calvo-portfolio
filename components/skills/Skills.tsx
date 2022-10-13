@@ -35,7 +35,6 @@ const Skills = (props: Props) => {
             imgSrc={imgSrc}
             alt={alt}
             percentage={percentage}
-            directionLeft={false}
             name={name}
           />
         ))}

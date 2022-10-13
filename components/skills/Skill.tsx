@@ -2,21 +2,19 @@ import { motion } from "framer-motion";
 import { TbCoffee } from "react-icons/tb";
 
 type Props = {
-  directionLeft: boolean;
   name: string;
   imgSrc: string;
   alt: string;
   percentage: number;
 };
 
-const Skill = ({ name, imgSrc, alt, percentage, directionLeft }: Props) => {
+const Skill = ({ name, imgSrc, alt, percentage }: Props) => {
   return (
     <>
       <div key={name}>
         <div className="group relative flex cursor-pointer">
           <motion.img
             initial={{
-              x: directionLeft ? -200 : 200,
               opacity: 0,
             }}
             transition={{ duration: 1 }}
