@@ -40,7 +40,7 @@ const Projects = () => {
         className="arrow left-3 lg:left-48 cursor-pointer hover:fill-[#64ffda]"
       />
 
-      <div className="relative w-full flex overflow-y-hidden overflow-x-hidden snap-x snap-mandatory z-20 mt-5">
+      <div className="relative w-full flex overflow-hidden overscroll-none snap-x snap-mandatory z-20 mt-5">
         {projects.map(
           (
             {
