@@ -15,7 +15,7 @@ const Modal = ({ toggleModal, successMessage }) => {
             </p>
           )}
         </div>
-        <button className="projectsBtn" type="submit" onClick={handleOnClick}>
+        <button className="projects-btn" type="submit" onClick={handleOnClick}>
           Close
         </button>
       </div>

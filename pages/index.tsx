@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className="bg-[#0a192f] pr-2 h-screen snap snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 font-my-font scrollbar-thin scrollbar-track-[#495670]/20 scrollbar-thumb-[#64ffda]/80 overscroll-y-auto overscroll-x-none">
       <Head>
-        <title>Daniel Calvo Lopez</title>
+        <title>Daniel Calvo Lopez | Frontend Developer</title>
         <link rel="icon" href="/dani-green.png" />
       </Head>
       <Header />
