@@ -1,4 +1,3 @@
-import { BsTelephoneFill } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
