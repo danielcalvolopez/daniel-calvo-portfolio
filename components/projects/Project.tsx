@@ -50,8 +50,8 @@ const Project = ({
       />
 
       <div className="flex flex-col px-0 md:px-2 max-w-6xl ">
-        <div className="flex flex-row justify-center ">
-          <h4 className="text-[#a8b2d1] text-4xl font-semibold text-center mr-4">
+        <div className="flex flex-row justify-center items-center">
+          <h4 className=" text-[#a8b2d1] text-2xl md:text-4xl font-semibold text-center mr-4">
             {name}
           </h4>
           <div className="flex flex-row items-center justify-center ">
