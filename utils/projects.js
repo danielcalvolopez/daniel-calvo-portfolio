@@ -11,15 +11,15 @@ const projects = [
       "My personal portfolio, featuring some of my projects, skills and personality!",
   },
   {
-    name: "Chat App",
-    img: "https://i.ibb.co/09ZXDqp/3.png",
-    alt: "chat",
-    demoURL: "https://chat-6ae50.web.app",
-    repoURL: "https://i.ibb.co/H7QDf85/3.png",
-    technologies1: ["NextJS", "React Router", "Firebase Auth"],
-    technologies2: ["Env Variables", "CSS Modules", "Firestore"],
+    name: "E-commerce site",
+    img: "https://ibb.co/HGb7J62",
+    alt: "e-commerce",
+    demoURL: "https://e-commerce-website-taupe-one.vercel.app/",
+    repoURL: "https://github.com/danielcalvolopez/e-commerce-site",
+    technologies1: ["NextJS", "React", "Redux"],
+    technologies2: ["MongoDB", "CSS Modules", "Context"],
     description:
-      "This chat app allows you to register and talk in real time with any other user within the database.",
+      "This website offers an entire online shopping experience. every order placed is stored in MongoDB and inside Redux store.",
   },
   {
     name: "Food App",
