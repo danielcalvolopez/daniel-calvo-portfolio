@@ -12,7 +12,7 @@ const projects = [
   },
   {
     name: "E-commerce site",
-    img: "https://ibb.co/HGb7J62",
+    img: "https://i.ibb.co/QYT95Lc/Untitled-design-7.png",
     alt: "e-commerce",
     demoURL: "https://e-commerce-website-taupe-one.vercel.app/",
     repoURL: "https://github.com/danielcalvolopez/e-commerce-site",
