@@ -11,6 +11,17 @@ const projects = [
       "My personal portfolio, featuring some of my projects, skills and personality!",
   },
   {
+    name: "WXLF Tattoo Studio",
+    img: "https://i.ibb.co/xXHcrH8/Untitled-design-19.png",
+    alt: "wxlf",
+    demoURL: "https://www.wxlfstudio.com/",
+    repoURL: "https://github.com/danielcalvolopez/wxlf",
+    technologies1: ["React", "Vite", "SASS"],
+    technologies2: ["Emailjs", "Framer Motion", "i18next"],
+    description:
+      "Official WXLF website, a modern tattoo studio based in Murcia (Spain)",
+  },
+  {
     name: "E-commerce site",
     img: "https://i.ibb.co/QYT95Lc/Untitled-design-7.png",
     alt: "e-commerce",
